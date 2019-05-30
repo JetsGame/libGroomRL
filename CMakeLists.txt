@@ -48,7 +48,7 @@ install(DIRECTORY src/groomrl DESTINATION include)
 # nnpdfcpp configuration
 if(ENABLE_TEST)
   include_directories(BEFORE src/groomrl src)
-  add_subdirectory(test)
+  add_subdirectory(example)
 endif(ENABLE_TEST)
 
 # fastjet
