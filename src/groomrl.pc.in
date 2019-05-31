@@ -7,5 +7,5 @@ Name: groomrl
 Description: The groomrl C-API library
 Version: @VERSION@
 Cflags: -I@includedir@
-Libs: -L@libdir@ -lgroomrl
+Libs: -L@libdir@ -lgroomrl -lgroomrl-fastjet
 

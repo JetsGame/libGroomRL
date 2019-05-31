@@ -7,12 +7,7 @@
 #define __GROOMRL_H__
 
 #include "fastjet/tools/Transformer.hh"
-
-// load model from file
-extern void read_groomrl_model(const char* folder);
-
-// apply model to input data
-extern bool apply_groomrl_model(double *vars);
+#include "fastjet/Error.hh"
 
 //----------------------------------------------------------------------
 /// \class GroomRLconfig
@@ -24,7 +19,7 @@ public:
 
   /// description
   static std::string description() {
-    if (instance==0) throw Error("GroomRL was not initiated");
+    if (instance==0) throw fastjet::Error("GroomRL was not initiated");
     return folder;
   }
 

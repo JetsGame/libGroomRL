@@ -2,6 +2,7 @@
 #include <queue>
 #include <vector>
 #include "groomrl/groomrl.h"
+#include "groomrl/cgroomrl.h"
 #include "fastjet/tools/Recluster.hh"
 
 using namespace fastjet;

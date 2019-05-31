@@ -1,6 +1,6 @@
 // This file is part of GroomRL by S. Carrazza and F. A. Dreyer
 #include <iostream>
-#include "groomrl/groomrl.h"
+#include "groomrl/cgroomrl.h"
 using namespace std;
 
 int main() {
