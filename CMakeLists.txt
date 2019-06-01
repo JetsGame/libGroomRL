@@ -9,12 +9,12 @@ SET(CMAKE_BUILD_WITH_INSTALL_RPATH FALSE)
 
 SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 
-find_package(PythonInterp 3 REQUIRED)
-find_package(PythonLibs   3 REQUIRED)
-
 project(libgroomrl)
 
 set(VERSION "\"1.0.0\"")
+
+find_package(PythonInterp 3 REQUIRED)
+find_package(PythonLibs   3 REQUIRED)
 
 # fastjet
 find_program(FASTJET_CONFIG fastjet-config REQUIRED)
