@@ -10,12 +10,11 @@ SET(CMAKE_BUILD_WITH_INSTALL_RPATH FALSE)
 SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 
 find_package(PythonInterp 3 REQUIRED)
+find_package(PythonLibs   3 REQUIRED)
 
 project(libgroomrl)
 
 set(VERSION "\"1.0.0\"")
-
-option(ENABLE_TEST "Enable test" OFF)
 
 # fastjet
 find_program(FASTJET_CONFIG fastjet-config REQUIRED)
@@ -36,9 +35,6 @@ endif(FASTJET_CONFIG)
 if (NOT EXISTS ${PROJECT_SOURCE_DIR/src/cgroomrl.cc})
   execute_process(COMMAND ${PYTHON_EXECUTABLE} ${PROJECT_SOURCE_DIR}/src/build.py WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/src)
 endif()
-
-find_package(PythonInterp 3 REQUIRED)
-find_package(PythonLibs   3 REQUIRED)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${FASTJET_CXX_FLAGS}")
 include_directories(${PYTHON_INCLUDE_DIRS})
