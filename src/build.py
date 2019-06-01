@@ -12,4 +12,4 @@ ffibuilder.set_source('cgroomrl', r'''
 with open('wrapper.py') as f:
     ffibuilder.embedding_init_code(f.read())
 
-ffibuilder.compile(target='libcgroomrl.so', verbose=True)
+ffibuilder.emit_c_code('cgroomrl.cc')
