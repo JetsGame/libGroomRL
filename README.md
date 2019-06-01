@@ -20,3 +20,5 @@ retreived with:
 pkg-config groomrl --cflags
 pkg-config groomrl --libs
 ```
+
+Sample programs using this library are provided in the examples/ directory.
