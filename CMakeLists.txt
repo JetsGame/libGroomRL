@@ -15,8 +15,6 @@ project(libgroomrl)
 
 set(VERSION "\"1.0.0\"")
 
-option(ENABLE_TEST "Enable test" OFF)
-
 # fastjet
 find_program(FASTJET_CONFIG fastjet-config REQUIRED)
 if (FASTJET_CONFIG)
