@@ -8,8 +8,8 @@ cmake .. -DCMAKE_INSTALL_PREFIX=<your install prefix>
 make
 make install
 ```
-We provide the cmake options `-DENABLE_TEST=ON/OFF` in order to compile the
-test example located in the `test` folder.
+We provide the cmake options `-DENABLE_WRAPPERONLY=ON/OFF` in order to compile a light wrapper 
+`libgroomrl-fastjet` which only includes a wrapper for the python call evaluating the neural network output.
 
 
 # Usage
