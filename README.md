@@ -1,9 +1,12 @@
 libGroomRL
 ==========
 
+This repository contains a C++ library to load models from 
+[arXiv:1903.09644](https://arxiv.org/abs/1903.09644 "GroomRL paper").
+
 ## About
 
-libGroomRL is a C++ library allowing an easy access in C++ analyses to grooming strategies based on neural network models trained by 
+libGroomRL is a C++ library allowing an easy access in C++ to grooming strategies based on neural network models trained by 
 [GroomRL](https://github.com/JetsGame/GroomRL "GroomRL github").
 
 ## Installation
