@@ -13,6 +13,8 @@ libGroomRL is a C++ library allowing an easy access in C++ to grooming strategie
 
 ## Installation
 
+libGroomRL is tested and supported on 64-bit systems running Linux.
+
 In order to install proceed with the usual cmake steps:
 ```bash
 mkdir build
@@ -24,6 +26,16 @@ make install
 We provide the cmake options `-DENABLE_WRAPPERONLY=ON/OFF` in order to compile a light wrapper 
 `libgroomrl-fastjet` which only includes a wrapper for the python call evaluating the neural network output.
 
+We recommend the installation of the libGroomRL package using a `miniconda3` environment with the [configuration specified here](https://github.com/JetsGame/libGroomRL/blob/master/environment.yml).
+
+libGroomRL requires the following packages:
+- python3
+- numpy
+- [fastjet](http://fastjet.fr/) (compiled with --enable-pyext)
+- cffi
+- keras
+- tensorflow
+- json
 
 ## Usage
 
