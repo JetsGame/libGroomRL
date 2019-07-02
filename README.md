@@ -1,4 +1,12 @@
-# Installation
+libGroomRL
+==========
+
+## About
+
+libGroomRL is a C++ library allowing an easy access in C++ analyses to grooming strategies based on neural network models trained by 
+[GroomRL](https://github.com/JetsGame/GroomRL "GroomRL github").
+
+## Installation
 
 In order to install proceed with the usual cmake steps:
 ```bash
@@ -12,7 +20,7 @@ We provide the cmake options `-DENABLE_WRAPPERONLY=ON/OFF` in order to compile a
 `libgroomrl-fastjet` which only includes a wrapper for the python call evaluating the neural network output.
 
 
-# Usage
+## Usage
 
 The compiler flags to include this library in your package can be
 retreived with:
