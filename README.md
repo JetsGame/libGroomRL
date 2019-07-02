@@ -31,7 +31,7 @@ We recommend the installation of the libGroomRL package using a `miniconda3` env
 libGroomRL requires the following packages:
 - python3
 - numpy
-- [fastjet](http://fastjet.fr/) (compiled with --enable-pyext)
+- [fastjet](http://fastjet.fr/)
 - cffi
 - keras
 - tensorflow
